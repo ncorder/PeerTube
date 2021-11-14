@@ -20,6 +20,7 @@ _note_: only **LTS** versions of external dependencies are supported. If no LTS 
 - [macOS](#macos)
 - [Gentoo](#gentoo)
 - [OpenBSD](#openbsd)
+- [GuixSD])(#guixsd)
 - [Other distributions](#other-distributions)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -593,6 +594,30 @@ Uncomment line #43:
 ```
 rcctl enable postgresql redis nginx
 ```
+
+## GuixSD
+
+1. Install basic utilities:
+
+`# guix install curl sudo unzip vim`
+
+2. It would be wise to disable root access and to continue this tutorial with a user with sudoers group access
+
+3. Manually install NodeJS from source
+
+4. Install Yarn from `npm`
+
+`npm install --global yarn`
+
+5. Install Python
+
+`
+# guix install python
+`
+
+6. Install other basic dependencies
+
+`guix install certbot nginx ffmpeg postgresql openssl g++ make redis-server git cron wget`
 
 ## Other distributions
 
