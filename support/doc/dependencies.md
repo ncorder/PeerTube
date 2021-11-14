@@ -611,9 +611,7 @@ rcctl enable postgresql redis nginx
 
 5. Install Python
 
-`
-# guix install python
-`
+`guix install python`
 
 6. Install other basic dependencies
 
